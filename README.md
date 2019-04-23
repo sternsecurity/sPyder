@@ -10,8 +10,9 @@ The script will create the 'hostname/share name' path if it doesn't exist and wi
 
 
 ## CSV Format
-The following is the requirement for the CSV, do not include column headers in the CSV \n
-remote ip,remote hostname,remote share name \n
+The following is the requirement for the CSV, do not include column headers in the CSV.
+remote ip,remote hostname,remote share name
+
 EG. 123.123.123.123,Storage01,UserData
 
 
