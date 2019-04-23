@@ -1,16 +1,15 @@
 
-
 import csv, os, sys, subprocess, time
 
 inputFile = open('spyershares.csv')
 csvFile = csv.reader(inputFile)
 
-#Ask for user input
+# Get for user input
 user = raw_input("Domain User: ")
 passw = raw_input("Password: ")
 domain = raw_input("Domain: ")
 
-# Function to create the dir where the share will be mounted
+# Function to create dir where the share will be mounted
 def makedirs(path):
 	try:  
 		os.makedirs(path)
