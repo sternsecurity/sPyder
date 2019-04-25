@@ -1,8 +1,12 @@
 # sPyder
+Developed by Peter Nelson<br>
+Stern Security<br>
+www.sternsecurity.com
+
 Python Automated SMB mounting via CSV ingestion.  This was written for mounting in a \*nix environment.<br>
 The code is ugly and it is still a work in progress and was written on the fly when a need arised.
 
-Exception handling and Error output needs work but the mounting works.
+Exception handling and Error output produces output even if the mount is successful.
 
 ## Mount Information
 Currently the shares a mounted in /mnt/hostname/share name<br>
