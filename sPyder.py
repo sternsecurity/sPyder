@@ -1,7 +1,7 @@
 
 import csv, os, sys, subprocess, time
 
-inputFile = open('spyershares.csv')
+inputFile = open('cme_smb_denice.csv')
 csvFile = csv.reader(inputFile)
 
 # Get for user input
@@ -40,10 +40,10 @@ def mount(lpath, rpath, user, passw, domain):
 
 		# Get return code from process
 		return_code = result.returncode
-		err_msg = line.rstrip()
+		#err_msg = line.rstrip()
 		#print 'RETURN CODE', return_code, err_msg
 		if return_code != 0:
-			raise Exception("Return Code: " + str(return_code) + ", Error Message: " + err_msg)
+			raise Exception("Return Code: " + str(return_code))# + ", Error Message: " + err_msg)
 	except Exception as error:
 		print ("Mount failed: " + str(error))
 		return return_code
@@ -70,5 +70,4 @@ for row in csvFile:
 				os.rmdir(col3_share)
 			except OSError as err:
 				print ("Error: %s" % err)
-	
-
+				
