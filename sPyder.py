@@ -1,7 +1,7 @@
 
 import csv, os, sys, subprocess, time
 
-inputFile = open('cme_smb_denice.csv')
+inputFile = open('<path_to_input>.csv')
 csvFile = csv.reader(inputFile)
 
 # Get for user input
